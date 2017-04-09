@@ -16,6 +16,7 @@ const sketch = function (p) {
     showSensorsCheckbox.position(270,248);
     showSensorsCheckbox.changed(_=>{
       Game.showCurvesSensors = !Game.showCurvesSensors;
+      reset();
     });
     const showDrawCheckbox = p.createCheckbox('Show Curves',true);
     const showDebugCheckbox = p.createCheckbox('Show Debug',true);

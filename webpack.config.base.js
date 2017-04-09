@@ -46,6 +46,6 @@ export default {
           filename: "[name].[contenthash].css"
         }),
         new webpack.NamedModulesPlugin(),
-        new HtmlWebpackPlugin({title: 'Custom Template', template: 'src/index.html.ejs'})
+        new HtmlWebpackPlugin({title: 'Neuroevolution of snakes', template: 'src/index.html.ejs'})
     ]
 }

@@ -401,6 +401,9 @@ class Curve {
     setDebug() {
       this.debug = true;
     }
+    toggleDebug() {
+      this.debug = !this.debug;
+    }
 
     move() {
         if (this.direction != 2) {

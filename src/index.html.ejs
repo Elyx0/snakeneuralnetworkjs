@@ -169,7 +169,28 @@
       <canvas id="ageChart" width="400" height="400"></canvas>
     </div>
   </div>
+
+  <div id="explain-holder">
+    <h1>Neuroevolution of Neural Network of snakes in the Browser.</h1>
+
+    This is a demonstration of evolving a neural network thanks to genetics algorithms in the browser
+    using a multilayer perceptron (150-15-15-1).
+
+    The initial population contains 36 individuals, each assigned a different genome.
+    They will fight following a round-robin tournament.
+    At the end the top 7 are kept alive, and the remaining 29 are created by breeding from the 7.
+
+    Each snake has 50 sensors, each reporting 3 inputs:
+    <ul>
+    <li>1) The distance the sensor has hit something normalized between 0 and 1</li>
+    <li>2) 1 if this sensor touched the enemy body</li>
+    <li>3) 1 if this sensor touched the enemy body</li>
+  </ul><br />
+    <b>If you reset the simulation, unselect "Show Curves" & "Show Debug" and put the simulation speed to something your CPU supports.
+    <br />Code on <a href="https://github.com/elyx0/snakeneuralnetworkjs">Github</a>
+  </div>
 </div>
+<a href="https://github.com/elyx0/snakeneuralnetworkjs"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/52760788cde945287fbb584134c4cbc2bc36f904/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f77686974655f6666666666662e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png"></a>
 
 </body>
 </html>

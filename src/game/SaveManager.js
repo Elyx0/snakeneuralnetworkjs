@@ -79,11 +79,11 @@ class SaveManager {
      req.send(poolJSON);
 
    } else {
-     var poolToSession = JSON.parse(poolJSON);
+     var poolToSession = pool;
      // Network are heavy in size 2mb -> 200ko
      // They will get regenerated in the loading
-     poolToSession.species.forEach(s => s.genomes.forEach(g => g.network = null));
      sessionStorage.setItem('pool',JSON.stringify(poolToSession));
+     callback();
    }
 
   }

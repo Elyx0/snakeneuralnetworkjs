@@ -8,6 +8,7 @@ body {
   //overflow: hidden;
   position: relative;
   padding:0;
+  padding-top:20px;
   margin:0;
 }
 
@@ -66,6 +67,7 @@ body {
   overflow: hidden;
   margin: 0 20px 20px;
 }
+#explain-holder,
 #charts-holder,
 #genealogic-holder,
 #age-charts-holder {
@@ -91,6 +93,12 @@ body {
   overflow: hidden;
   box-shadow: 0px 6px 11px 1px rgba(0, 0, 0, 0.2);
   background-color: rgb(247, 247, 247);
+}
+
+#explain-holder {
+  overflow: scroll;
+  padding:20px;
+  line-height: 20px;
 }
 
 .charts {

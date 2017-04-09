@@ -3,7 +3,6 @@
     ["env", { "targets": { "node": 7, "browsers": ["last 2 versions"] }, "useBuiltIns": true }],
     "stage-0"
   ],
-  "plugins": ["add-module-exports"],
   "env": {
     "production": {
       "plugins": ["babel-plugin-dev-expression"]

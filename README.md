@@ -1,4 +1,5 @@
-# snakeneuralnetworkjs
+# snakeneuralnetworkjs [![Build Status][travis-image]][travis-url]
+
 
 ### Neuroevolution of Neural Network of snakes in the Browser.
 
@@ -16,14 +17,13 @@ Each snake has 50 sensors, each reporting 3 inputs:
 
 <br/>
 
-[![Build Status][travis-image]][travis-url]
 
 ## Screenshot
 
-####Snakes fighting:
+###Snakes fighting:
 ![Snakes](/demo/demo.gif)
 
-####Sensors:
+###Sensors:
 ![Snakes](/demo/sensors.gif)
 
 Green: The sensor touched the enemy body

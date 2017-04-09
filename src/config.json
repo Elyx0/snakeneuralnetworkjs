@@ -1,0 +1,13 @@
+{
+  "C_W": 420,
+  "C_H": 420,
+  "InputSize": 150,
+  "Outputs": 1,
+  "Population": 36,
+  "HiddenLayerSize":15,
+  "KeepAlivePercent": 0.2,
+  "MutationChance": 0.2,
+  "nbWhiskers": 50,
+  "inputsPerWhisker": 3,
+  "whiskerSize": 140
+}

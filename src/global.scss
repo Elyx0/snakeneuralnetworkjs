@@ -1,0 +1,92 @@
+body {
+  min-height: 100%;
+  font-family: Helvetica;
+  font-size: 13px;
+  //overflow: hidden;
+  position: relative;
+  padding:0;
+  //rgb(230,230,230)
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#87e0fd+0,53cbf1+40,05abe0+100;Blue+3D+%23+16 */
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#febbbb+0,fe9090+45,ff5c5c+100;Red+3D+%231 */
+  background: linear-gradient(to bottom, rgba(235, 135, 253, 0.25), rgba(86, 139, 156, 0.72));}
+
+#defaultCanvas0 {
+  border-radius: 5px;
+  //border: 2px solid rgba(0,0,0,.5);
+}
+#debug-holder {
+  flex:1;
+  margin-bottom:20px;
+  flex-basis: auto;
+  min-width: 420px;
+  width:420px;
+  margin: 0 20px 20px;
+  text-align: center;
+  height:420px;
+  overflow: hidden;
+  border-radius: 5px;
+  background-color: rgb(230,230,230);
+}
+#debug {
+  width:420px;
+  height: 420px;
+  position: relative;
+  margin: auto;
+  padding-top: 10px;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  /*justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;*/
+  flex-basis: auto;
+}
+
+#sketch-holder {
+  align-items: center;
+  justify-content: center;
+  flex:1;
+  text-align: center;
+  margin-bottom:20px;
+  flex-basis: auto;
+  min-width: 400px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 0 20px 20px;
+}
+#charts-holder,
+#genealogic-holder,
+#age-charts-holder {
+  margin: 0 20px 20px;
+  align-items: center;
+  justify-content: center;
+  flex:1;
+  margin-bottom:20px;
+  flex-basis: auto;
+  min-width: 400px;
+  height: 420px;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: rgb(230,230,230);
+}
+
+#age-charts-holder,
+#charts-holder,
+#genealogic-holder,
+#defaultCanvas0,
+#debug-holder {
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0px 6px 11px 1px rgba(0, 0, 0, 0.2);
+  background-color: rgb(247, 247, 247);
+}
+
+.charts {
+  width: 400px;
+  height:400px;
+  margin: auto;
+  text-align: center;
+}

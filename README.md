@@ -61,5 +61,5 @@ Then head to `localhost:8080` in the browser.
 $ npm run test
 ```
 
-[travis-image]: https://travis-ci.org/elyx0/snakeneuralnetworkjs.svg?branch=master
-[travis-url]: https://travis-ci.org/elyx0/snakeneuralnetworkjs
+[travis-image]: https://travis-ci.org/Elyx0/snakeneuralnetworkjs.svg?branch=master
+[travis-url]: https://travis-ci.org/Elyx0/snakeneuralnetworkjs

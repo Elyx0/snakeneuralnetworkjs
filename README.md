@@ -20,10 +20,10 @@ Each snake has 50 sensors, each reporting 3 inputs:
 
 ## Screenshot
 
-###Snakes fighting:
+### Snakes fighting:
 ![Snakes](/demo/demo.gif)
 
-###Sensors:
+### Sensors:
 ![Snakes](/demo/sensors.gif)
 
 Green: The sensor touched the enemy body
@@ -55,6 +55,11 @@ $ cd your-project-name && npm install
 $ node server.js
 ```
 Then head to `localhost:8080` in the browser.
+
+## Testing
+```bash
+$ npm run test
+```
 
 [travis-image]: https://travis-ci.org/elyx0/snakeneuralnetworkjs.svg?branch=master
 [travis-url]: https://travis-ci.org/elyx0/snakeneuralnetworkjs

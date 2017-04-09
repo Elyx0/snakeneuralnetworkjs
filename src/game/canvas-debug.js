@@ -10,7 +10,7 @@ const sketch = function (p) {
     p.textFont("Helvetica");
     var canvas = p.createCanvas(D_W, D_H);
     //canvas.parent('debug');
-    speedSlider = p.createSlider(0, 300, Game.simulationSpeed);
+    speedSlider = p.createSlider(0, 300, Game.simulationSpeed,2);
     speedSlider.position(115,320);
     const showSensorsCheckbox = p.createCheckbox('Show Sensors',false);
     showSensorsCheckbox.position(270,248);

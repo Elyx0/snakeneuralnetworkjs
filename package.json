@@ -9,9 +9,9 @@
     "build": "NODE_ENV=production node --trace-warnings -r babel-register ./node_modules/webpack/bin/webpack --config webpack.config.production.js --progress --profile --colors"
   },
   "keywords": [
-    "neat",
-    "sharpneatjs",
-    "neatjs",
+    "neural",
+    "synaptic",
+    "perceptron",
     "neurralnetwork"
   ],
   "author": "Elyx0",

@@ -6,7 +6,7 @@ import Curve from './Curve';
 class MainCanvas {
     constructor() {
         this.curvesList = [];
-        this.simulationSpeed = 1;
+        this.simulationSpeed = 2;
         this.showDebug = 1;
         this.showDraw = 1;
         this.showCurvesSensors = 0;

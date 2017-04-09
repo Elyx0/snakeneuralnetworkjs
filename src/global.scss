@@ -1,3 +1,6 @@
+html {
+  background: grey;
+}
 body {
   min-height: 100%;
   font-family: Helvetica;
@@ -5,10 +8,8 @@ body {
   //overflow: hidden;
   position: relative;
   padding:0;
-  //rgb(230,230,230)
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#87e0fd+0,53cbf1+40,05abe0+100;Blue+3D+%23+16 */
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#febbbb+0,fe9090+45,ff5c5c+100;Red+3D+%231 */
-  background: linear-gradient(to bottom, rgba(235, 135, 253, 0.25), rgba(86, 139, 156, 0.72));}
+  margin:0;
+}
 
 #defaultCanvas0 {
   border-radius: 5px;
@@ -16,6 +17,7 @@ body {
 }
 #debug-holder {
   flex:1;
+  position: relative;
   margin-bottom:20px;
   flex-basis: auto;
   min-width: 420px;
@@ -25,7 +27,13 @@ body {
   height:420px;
   overflow: hidden;
   border-radius: 5px;
-  background-color: rgb(230,230,230);
+}
+
+#see-from-beginning {
+  position: absolute;
+  bottom: 8px;
+  z-index: 42;
+  transform: translateX(-50%);
 }
 #debug {
   width:420px;
@@ -35,6 +43,7 @@ body {
   padding-top: 10px;
 }
 .container {
+  height: 100%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;

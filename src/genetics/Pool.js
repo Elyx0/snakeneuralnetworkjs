@@ -148,9 +148,17 @@ class Pool {
   }
 
   init() {
+    this.maxFitness = 0;
+    this.generation = 0;
+    this.championsPerfs = [];
+    this.currentGenerationMaxFitness = 0;
     this.genomes = this.buildInitGenomes();
   }
+  reboot() {
+    this.init();
+    this.hydrateChart();
 
+  }
   // Given some inputs activate the network assigned to P1 and return the output
   evaluateP1Genome(inputs) {
     const networkInputs = inputs;

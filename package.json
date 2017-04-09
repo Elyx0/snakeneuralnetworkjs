@@ -4,7 +4,7 @@
   "description": "N.E.A.T implementation in javascript allowing two snakes to learn to fight by neuroevolution of their neural network and genetics",
   "main": "index.js",
   "scripts": {
-    "test": "tape -r babel-register tests/*.js | ./node_modules/.bin/tap-diff",
+    "test": "babel-tape-runner tests/*.js | ./node_modules/.bin/tap-diff",
     "hot-server": "NODE_ENV=development node --trace-warnings -r babel-register ./node_modules/webpack-dev-server/bin/webpack-dev-server --config ./webpack.config.development.js",
     "build": "NODE_ENV=production node --trace-warnings -r babel-register ./node_modules/webpack/bin/webpack --config webpack.config.production.js --progress --profile --colors",
     "heroku-postbuild": "npm run build",
@@ -29,6 +29,7 @@
   "devDependencies": {
     "babel-preset-env": "^1.3.2",
     "babel-runtime": "^6.23.0",
+    "babel-tape-runner": "^2.0.1",
     "css-loader": "^0.28.0",
     "extract-text-webpack-plugin": "^2.1.0",
     "html-webpack-plugin": "^2.28.0",

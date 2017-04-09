@@ -57,8 +57,8 @@ test('Matches & Opponents', t => {
   pool.matchResult({winner,loser});
   const match1 = pool.getGenomeOfCurve(winner.id).matches[0];
   const match2 = pool.getGenomeOfCurve(loser.id).matches[0];
-  t.deepEqual(match1,{opponent:1,score:150,winner:true},'Winner should get its score');
-  t.deepEqual(match2,{opponent:0,score:10,winner:false},'Loser should get its score');
+  t.deepEqual(match1,{opponent:1,score:12,winner:true},'Winner should get its score');
+  t.deepEqual(match2,{opponent:0,score:1,winner:false},'Loser should get its score');
 
   let p1Index = pool.findOpponent(false,pool.genomes);
   let p2Index = pool.findOpponent(0,pool.genomes);
@@ -72,8 +72,8 @@ test('Matches & Opponents', t => {
   pool.matchResult({winner,loser:otherLoser});
 
   const match3 = pool.getGenomeOfCurve(winner.id).matches[1];
-  t.deepEqual(match3,{opponent:2,score:150,winner:true},'P1 winning subsequent matches');
+  t.deepEqual(match3,{opponent:2,score:12,winner:true},'P1 winning subsequent matches');
   t.equal(pool.findOpponent(false,pool.genomes),0,'P1 is still the same Genome after 2 matches');
   t.equal(pool.findOpponent(0,pool.genomes),3,'P2 is set to the next Genome');
-  t.equal(300,pool.getGenomeOfCurve(winner.id).fitness,'Winner Fitness Grew');
+  t.equal(pool.getGenomeOfCurve(winner.id).fitness,24,'Winner Fitness Grew');
 });

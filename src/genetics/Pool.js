@@ -199,13 +199,13 @@ class Pool {
     winnerGenome.addMatch(
       {
         opponent: this.getIndexOfCurveGenome(loser.id),
-        score: 10 + Math.log10(winner.diedAt),
+        score: ~~(10 + Math.log10(winner.diedAt)),
         winner:true,
       });
     loserGenome.addMatch(
       {
         opponent: this.getIndexOfCurveGenome(winner.id),
-        score: Math.log10(loser.diedAt),
+        score: ~~(Math.log10(loser.diedAt)),
         winner:false,
       });
   }
